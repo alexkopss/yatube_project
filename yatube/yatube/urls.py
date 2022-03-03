@@ -19,5 +19,6 @@ from django.urls import include, path
 urlpatterns = [
     # импорт правил из приложения posts
     path('', include('posts.urls')),
+    path('group_posts/', include('posts.urls')),
     path('admin/', admin.site.urls),
 ] 
